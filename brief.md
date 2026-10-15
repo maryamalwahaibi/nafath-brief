@@ -36,5 +36,9 @@ A star schema places one fact table at the centre, holding numeric measures, sur
 Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 # Misconception in My Track
+A common belief is that a strong firewall alone stops cyberattacks. NIST SP 800-61 Rev. 3 contradicts this: the publication states that incident response requires preparation across the Govern, Identify, and Protect functions and active work in Detect, Respond, and Recover, with continuous Improvement feeding lessons back into every function. A firewall only supports part of the Protect function. Attackers routinely bypass firewalls through stolen credentials, insider threats, or zero-day exploits, so a 5G emergency service needs layered defence and a tested response plan, not a single device.
+
 
 # Open Question
+How can a dedicated 5G slice be secured end-to-end when the operator relies on third-party vendors for radio, core, and cloud components? I would verify which assurance standards apply and how incidents are escalated across vendor boundaries.
+
