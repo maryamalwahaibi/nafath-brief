@@ -21,10 +21,19 @@ An offline-first mobile app reads from a local data source (for example, Room) i
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 # Networking
+Network slicing divides one physical 5G network into multiple isolated virtual networks, each tuned for specific needs like bandwidth, latency, or reliability. A dedicated slice for emergency responders can be built on URLLC (ultra-reliable low-latency communications) to guarantee priority over ordinary traffic, stable connectivity even during congestion, and low latency. This keeps police, fire, and medical teams connected during outages or attacks, when ordinary users compete for the same resources.
+
+Resource: Spain: Orange tests 5G network prioritisation for emergency services - https://digital-strategy.ec.europa.eu/en/miscellaneous/spain-orange-tests-5g-network-prioritisation-emergency-services
 
 # Cybersecurity
+NIST SP 800-61 Rev. 3 defines incident response as three active phases: Detect, Respond, and Recover, supported by preparation activities (Govern, Identify, Protect) and continuous Improvement. When a 5G emergency service is attacked, detection uses monitoring and intrusion detection; response contains and eradicates the threat while minimizing damage; recovery restores normal service; and lessons learned feed back into improvement. A dedicated slice limits the blast radius, since attackers cannot easily move to other slices.
+
+Resource: NIST SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://csrc.nist.gov/pubs/sp/800/61/r3/final
 
 # Data
+A star schema places one fact table at the centre, holding numeric measures, surrounded by dimension tables that describe entities like region and date. A snowflake schema normalises those dimensions into multiple related tables. For daily per-region usage reports, the star schema is the better fit: it produces simpler and faster aggregation queries, shorter filter-propagation paths, and easier hierarchies for region and time, while the storage savings of a snowflake schema are irrelevant at this scale.
+
+Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 # Misconception in My Track
 
